@@ -1,3 +1,3 @@
 # My Google
 
-<img src="images/1.png" width="100%">
+<img src="Images/1.png" width="100%">
