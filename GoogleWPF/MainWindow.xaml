@@ -1,0 +1,82 @@
+﻿<Window x:Class="GoogleWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GoogleWPF"
+        mc:Ignorable="d"
+        Title="My Google" Height="450" Width="800">
+    <Grid Background="#FF222122">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid Name="header" HorizontalAlignment="Right" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Почта" Margin="0,10,0,0" Grid.Column="1" HorizontalAlignment="Center" Foreground="White"/>
+            <Label Content="Картинки" Margin="0,10,10,0" Grid.Column="2" HorizontalAlignment="Center" Foreground="White"/>
+        </Grid>
+        <Grid Name="content" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Content="Google" Foreground="White" FontSize="90" HorizontalAlignment="Center"/>
+            <Grid Grid.Row="1" Margin="0,10,0,0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBox Grid.Column="0" Width="300" Foreground="White" BorderBrush="#FF989898" Background="{x:Null}" BorderThickness="2,2,2,2"/>
+                <Image Grid.Column="1" Margin="4,0,0,0" Width="32" Height="32" Source="/Images/keyboard.png"/>
+                <Image Grid.Column="2" Width="32" Height="32" Source="/Images/micro.png"/>
+                <Image Grid.Column="3" Width="22" Height="22" Source="/Images/camera.png"/>
+            </Grid>
+            <Grid Grid.Row="2" Margin="0,10,0,0" HorizontalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Content="Поиск в Google" Background="#FF303134" Foreground="White" Width="100" Height="25" Grid.Column="0" Margin="0,0,5,0" BorderBrush="{x:Null}"/>
+                <Button Content="Мне повезёт!" Background="#FF303134" Foreground="White" Width="100" Grid.Column="1" Margin="5,0,0,0" BorderBrush="{x:Null}"/>
+            </Grid>
+        </Grid>
+        <Grid Name="footer" Background="#FF171717" Grid.Row="2">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Content="Украина" Margin="10,0,0,0" Foreground="#FF9AA099" Grid.Row="0" VerticalAlignment="Center"/>
+                <Grid Grid.Row="1" VerticalAlignment="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Всё о Google" Foreground="#FF9AA099" HorizontalAlignment="Center" Grid.Column="0"/>
+                    <Label Content="Реклама" Foreground="#FF9AA099" HorizontalAlignment="Center" Grid.Column="1"/>
+                    <Label Content="Для Бизнеса" Foreground="#FF9AA099" HorizontalAlignment="Center" Grid.Column="2"/>
+                    <Label Content="Как работает Goggle Поиск" HorizontalAlignment="Center" Foreground="#FF9AA099" Grid.Column="3"/>
+                    <Label Content="Конфиденциальность" Foreground="#FF9AA099" HorizontalAlignment="Center" Grid.Column="5"/>
+                    <Label Content="Условия" Foreground="#FF9AA099" HorizontalAlignment="Center" Grid.Column="6"/>
+                    <Label Content="Настройки" Foreground="#FF9AA099" HorizontalAlignment="Center" Grid.Column="7"/>
+                </Grid>
+            </Grid>
+        </Grid>
+        
+    </Grid>
+</Window>

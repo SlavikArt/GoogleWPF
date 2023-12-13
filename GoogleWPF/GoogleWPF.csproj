@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\camera.png" />
+    <None Remove="Images\keyboard.png" />
+    <None Remove="Images\micro.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\camera.png" />
+    <Resource Include="Images\keyboard.png" />
+    <Resource Include="Images\micro.png" />
+  </ItemGroup>
+
+</Project>
